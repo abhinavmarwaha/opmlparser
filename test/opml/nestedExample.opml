@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+    <head>
+        <title>RSS</title>
+    </head>
+    <body>
+        <outline title="Golang" text="Golang">
+            <outline htmlUrl="https://golangcode.com/" xmlUrl="https://golangcode.com/index.xml" type="rss" title="GolangCode" text="GolangCode" />
+            <outline title="The Go Programming Language Blog" type="rss" htmlUrl="https://blog.golang.org/feed.atom" xmlUrl="http://blog.golang.org/feed.atom?format=xml" text="The Go Programming Language Blog" />
+            <outline htmlUrl="https://www.reddit.com/r/golang/?format=xml" type="rss" xmlUrl="http://www.reddit.com/r/golang/.rss?format=xml" title="The Go Programming Language" text="The Go Programming Language" />
+            <outline htmlUrl="https://www.golangprograms.com/golang/" title="Golang Blog" text="Golang Blog" type="rss" xmlUrl="http://www.golangprograms.com/golang/rss" />
+            <outline text="Learn Go Programming - Medium" xmlUrl="http://blog.learngoprogramming.com/feed" type="rss" htmlUrl="https://blog.learngoprogramming.com?source=rss----f1d2933e4d7e---4" title="Learn Go Programming - Medium" />
+        </outline>
+        <outline text="IOS" title="IOS">
+            <outline type="rss" text="Release notes from iOS-Weekly" htmlUrl="https://github.com/SwiftOldDriver/iOS-Weekly/releases" title="Release notes from iOS-Weekly" xmlUrl="https://github.com/SwiftOldDriver/iOS-Weekly/releases.atom" />
+        </outline>
+    </body>
+</opml>

@@ -51,6 +51,7 @@ item.version
 item.xmlURL
 item.httpURL
 item.language
+item.nestedItems
 ```
 
 ## License

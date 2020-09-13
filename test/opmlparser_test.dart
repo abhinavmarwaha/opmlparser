@@ -6,7 +6,7 @@ import 'package:opmlparser/util/datetime.dart';
 
 void main() {
   test('parse example.opml', () {
-    String opmlString = File('test/xml/example.opml').readAsStringSync();
+    String opmlString = File('test/opml/example.opml').readAsStringSync();
 
     Opml opml = Opml.parse(opmlString);
 
@@ -34,5 +34,23 @@ void main() {
     expect(opml.items.first.type, 'rss');
     expect(opml.items.first.version, 'RSS2');
     expect(opml.items.first.xmlUrl, 'http://news.com.com/2547-1_3-0-5.xml');
+  });
+
+  test('parse nestedExample.opml', () {
+    String opmlString = File('test/opml/nestedExample.opml').readAsStringSync();
+
+    Opml opml = Opml.parse(opmlString);
+    expect(opml.title, 'RSS');
+    expect(opml.items.length, 2);
+    expect(opml.items.first.title, 'Golang');
+    expect(opml.items.first.text, 'Golang');
+    expect(opml.items.first.nesteditems.length, 5);
+    expect(
+        opml.items.first.nesteditems.first.htmlUrl, 'https://golangcode.com/');
+    expect(opml.items.first.nesteditems.first.xmlUrl,
+        'https://golangcode.com/index.xml');
+    expect(opml.items.first.nesteditems.first.type, 'rss');
+    expect(opml.items.first.nesteditems.first.title, 'GolangCode');
+    expect(opml.items.first.nesteditems.first.text, 'GolangCode');
   });
 }

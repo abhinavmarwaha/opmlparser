@@ -1,5 +1,5 @@
 name: opmlparser
-version: 0.0.2
+version: 0.1.0
 description: A dart package for parsing OPML. All features of the official spec is included.
 homepage: https://github.com/abhinavmarwaha/opmlparser
 environment:
